@@ -1,5 +1,19 @@
+# ASP.NET Core build outputs
+WebMetric/bin/
+WebMetric/obj/
+
+# VS Code project files
+.vscode/
 *.user
-*.suo
-*.cache
-bin/
-obj/
+
+# NuGet
+WebMetric/project.assets.json
+WebMetric/project.nuget.cache
+
+# Prometheus executáveis e dados
+Prometheus/*.exe
+Prometheus/data/
+
+# Logs, lockfiles
+*.log
+.lock
