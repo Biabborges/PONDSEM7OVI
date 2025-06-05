@@ -18,7 +18,6 @@ builder.Services.AddOpenTelemetry()
                        0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 }
             });
 
-        // Adiciona seu Meter customizado
         metrics.AddMeter("WebMetric.App");
     });
 
@@ -26,11 +25,9 @@ var app = builder.Build();
 
 app.MapPrometheusScrapingEndpoint();
 
-// Criação do contador customizado
 var meter = new Meter("WebMetric.App", "1.0.0");
 var requestCounter = meter.CreateCounter<long>("app.request_counter");
 
-// Endpoint que incrementa a métrica
 app.MapGet("/track", () =>
 {
     requestCounter.Add(1);
