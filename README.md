@@ -82,7 +82,7 @@ O projeto expõe métricas nativas via OpenTelemetry, que estão sendo monitorad
 | **`http_server_active_requests`**              | Quantidade de requisições HTTP ativas no momento. Representa a carga instantânea no servidor.                     |
 | **`http_server_request_duration_seconds_sum`** | Soma do tempo (em segundos) de todas as requisições HTTP servidas. Permite análise de performance acumulada.      |
 
-![Painel do Grafana com métricas ASP.NET](images/image%20(14).png)
+![Painel do Grafana com métricas ASP.NET](/Images/image%20(14).png)
 
 ### Observações:
 
